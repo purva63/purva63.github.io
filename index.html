@@ -1,5 +1,149 @@
 <html>
+<head>
+<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
+function iframe2(){
+  var move3 = document.getElementById('iframe1');
+  move3.height="160%";
+}
+function inter(){
+  var move4 = document.getElementById('iframe1');
+  move4.height="100%";
+  var move3 = document.getElementById('contact');
+  move3.height="-20%";
+}
+function ext(){
+  var move4 = document.getElementById('iframe1');
+  move4.height="100%";
+  var move3 = document.getElementById('contact');
+  move3.height="-20%";
+}
+function abt(){
+  var move4 = document.getElementById('iframe1');
+  move4.height="50%";
+  var move3 = document.getElementById('contact');
+  move3.height="-20%";
+}
+function acad(){
+  var move4 = document.getElementById('iframe1');
+  move4.height="100%";
+ 
+}
+</script>
+</head>
+<style type="text/css">
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+  #load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("https://media.giphy.com/media/RKCFkHpYQZWmI/giphy.gif") no-repeat center center  ;
+     }
+  body{
+  width:100%;
+    height:100%;
+  }
+  #grant{
+    margin-top: 0.25cm;
+    background:url("https://dilemmaxdotnet.files.wordpress.com/2014/02/mumbai-skyline-02.jpg") no-repeat center;
+    height: 8cm;
+    width: 100%;
+  }
+  .navbar {
+    margin-top: -2cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    color: black ;
+  }
+  
+</style>  
 <body>
-hi
+
+<div id="load"></div>
+    <div id="contents">
+    <div>
+    <div id="grant">
+    <div align="center" style="color: black ;font-family: elephant; font-style: italic;font-size: 40px ;margin-top: 1cm;">
+  PURVA JHAVERI
+</div>
+<div align="center" style="color: black ;font-family: georgia; font-style: normal;font-size: 20px ;margin-top:10px;">
+  TO BE ENGINEER
+</div> 
+    
+    </div>
+         <nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home.html" target="iframe1" > HOME </a></li>
+      <li><a href="about.html" target="iframe1" onclick="abt()">ABOUT ME</a></li>
+      <li><a href="academics.html" target="iframe1" onclick="acad()">ACADEMICS</a></li>
+      <li><a href="internship.html" target="iframe1" onclick="inter()">INTERNSHIPS</a></li>
+      <li><a href="projects.html" target="iframe1" onclick="iframe2()">PROJECTS</a></li>
+      <li><a href="extra.html" target="iframe1" onclick="ext()""> EXTRA-CURRICULUM-HOBBIES</a></li>
+      <li><a href="A.html#contact">GET IN TOUCH!</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<br><br>
+  <div id="myinfo">
+  <iframe id="iframe1" name="iframe1" src="home.html" width="100%" height="100%" style="border: none;" align="center" scrolling="no"; >
+</iframe>
+</div> <br>
+<div id="contact" style="background-color: darkgreen; height: 30%;"> <br>
+<b style="color: rosybrown;font-family: georgia;font-size: 20px; margin-left: 20%; ">GET IN TOUCH! </b>
+   <br><br><br> <button style="margin-left: 15%" onclick="location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=purva.jhaveri96@gmail.com&su=SUBJECT&body=BODY&bcc=someone.else@example.com';"> <img src="https://lh3.googleusercontent.com/nihuMnmzbvI7SP_-DX9vAbkD-1j8OgIFEmpJOVocDetNHnXjNT4sSi1tn6fbVFRqQIjSUKO9Mg=s50-h50-e365" > </button>
+  <button style="margin-left: 5%" onclick="location.href = 'https://www.facebook.com/purva.jhaveri.3';">  <img src="http://cdn02.cdn.justjared.com/wp-content/themes/default/images/button_facebook.gif"> </button>
+  <button style="margin-left: 5%" onclick="location.href = 'https://www.instagram.com/purva63/';">  <img src="https://i2.wp.com/bhamnow.com/wp-content/uploads/2016/09/Instagram-50x50.gif?fit=50%2C50&ssl=1"> </button> 
+  <button style="margin-left: 5%" onclick="location.href = 'https://github.com/purva63';">  <img src="http://commons.digitalarchaeology.msu.edu/wp-content/uploads/group-avatars/16/ea8fb7298c49414396831d72d64618f4-bpthumb.png"> 
+
+</div> 
+</div> 
+</div>   
+
 </body>
 </html>
