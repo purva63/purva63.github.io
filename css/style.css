@@ -98,10 +98,10 @@ p{
 .header{
 	text-align:center;
 	background:url(../img/pw_maze_black_2X.png) left top repeat;
-	padding:280px 0;
+	padding:150px 0;
 }
 .logo{
-	width:130px;
+	width:430px;
 	margin:0 auto 35px;
 }
 .header h1{
@@ -115,7 +115,7 @@ p{
 
 .we-create{
 	padding:0;
-	margin:35px 0 55px;
+	margin:5px 0 55px;
 }
 .wp-pic{
 	margin-bottom:20px;
@@ -356,7 +356,7 @@ color: #fff;
 .Portfolio-box{
 	text-align:center;
 	margin-bottom:30px;
-	height:400px;
+	height:450px;
 	width:350px;
 	overflow:hidden;
 	float:left;
